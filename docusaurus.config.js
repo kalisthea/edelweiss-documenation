@@ -15,10 +15,10 @@ const config = {
   // favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://edelweiss-documentation.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/edelweiss/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -157,15 +157,19 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      deploy: {
+      
+        // ...
+        organizationName: 'kalisthea', // Usually your GitHub org/user name.
+        projectName: 'edelweiss-documenation', // Usually your repo name.
+        deploymentBranch: 'main', //branch that pages will be deployed from.
+        trailingSlash: false,
+        // ...
+       
+      },
     }),
 };
 
 export default config;
 
-module.exports = {
-  // ... other config
-  organizationName: 'kalisthea', // Usually your GitHub org/user name.
-  projectName: 'edelweiss-documenation', // Usually your repo name.
-  deploymentBranch: 'main', //branch that pages will be deployed from.
-  trailingSlash: false,
-};
+

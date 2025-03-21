@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Risk Modeling Feature : Overview
 > **Description**  
-haha
+Provides predictive modeling to assess **Expected Credit Loss (ECL)** of financial assets. Implementing a more **forward looking** approach to measuring impairment by utilizing historical data, economic indicators and other relevant informations.
 ---
 
 ## Navigating the Risk Modeling Menu
@@ -16,20 +16,19 @@ haha
 ---
 
 ## What's in the Risk Modeling Feature
-![image](/img/rm-2.png)
 ### Macroeconomics Value (MEV) Configuration
 - Allows users to define MEV data and the possible transformation that will be used in the modeling process.
 
     [More about this feature](/docs/user-stories/risk-modeling/mev-config.md)
 
 ### Modeling Process Generation
-- Allows user to define the workflow of a modeling process.
+- Allows user to define the workflow of a modeling process and gain model results.
 
     [More about this feature](/docs/user-stories/risk-modeling/generate-model.md)
 
 
-### Forward-Looking
-- This feature allows the chatbot to help users generate workflow automatically based on the instructions given.
+### Forward-Looking Prediction
+- Allows user to do forward-looking prediction after the modeling process.
 
     [More about this feature](/docs/user-stories/risk-modeling/forward-looking.md)
 

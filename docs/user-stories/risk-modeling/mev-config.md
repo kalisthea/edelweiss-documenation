@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # MEV Master Configuration
 >**Description**  
-Configuration for MEV data and the possible transformation that will be used in the modeling process.
+Configuration for **Macroeconomics Value (MEV)** data and the possible transformation that will be used in the modeling process.
 ---
 ![image](/img/rm-3.png)
 
@@ -49,7 +49,7 @@ Configuration for MEV data and the possible transformation that will be used in 
 ---
 
 ## Updating/Editing Configuration
-- Choose the configuration you want to edit/update. Click on the "three-dots" button to show more actions.
+- Choose the configuration you want to edit/update. Click on the "More" button to show more actions.
 - You can now choose to view, update/edit, and delete configuration.
 
 ![image](/img/rm-7.png)

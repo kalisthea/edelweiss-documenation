@@ -161,3 +161,11 @@ const config = {
 };
 
 export default config;
+
+module.exports = {
+  // ... other config
+  organizationName: 'kalisthea', // Usually your GitHub org/user name.
+  projectName: 'edelweiss-documenation', // Usually your repo name.
+  deploymentBranch: 'main', //branch that pages will be deployed from.
+  trailingSlash: false,
+};

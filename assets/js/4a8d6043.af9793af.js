@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkregla_docs=self.webpackChunkregla_docs||[]).push([[5395],{8592:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/edelweiss/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

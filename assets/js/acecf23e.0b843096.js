@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkregla_docs=self.webpackChunkregla_docs||[]).push([[1903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/edelweiss/blog","blogTitle":"Blog","authorsListPath":"/edelweiss/blog/authors"}')}}]);

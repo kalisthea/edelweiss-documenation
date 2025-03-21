@@ -22,8 +22,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'kalisthea', // Usually your GitHub org/user name.
+  projectName: 'edelweiss-documenation', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -156,16 +156,6 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
-      },
-      deploy: {
-      
-        // ...
-        organizationName: 'kalisthea', // Usually your GitHub org/user name.
-        projectName: 'edelweiss-documenation', // Usually your repo name.
-        deploymentBranch: 'main', //branch that pages will be deployed from.
-        trailingSlash: false,
-        // ...
-       
       },
     }),
 };

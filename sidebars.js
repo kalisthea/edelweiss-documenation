@@ -71,6 +71,7 @@ const sidebars = {
         'user-stories/risk-modeling/generate-model',
         'user-stories/risk-modeling/forward-looking',
         'user-stories/risk-modeling/model-manager',
+        'user-stories/risk-modeling/rm-element',
       ],
     },
   ],

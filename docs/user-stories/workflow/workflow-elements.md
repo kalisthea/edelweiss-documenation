@@ -21,7 +21,7 @@ Toolbox contains provided pre-defined elements needed to create the workflow.
 :::warning Restrictions
 
 - Elements names should be minimum of 4 characters and valid characters (alphanumeric, single space and underscores).
-- Duplicate element names are not allowed (must be unique).
+- Duplicate element names are not allowed (must be unique) within one workflow canvas.
 :::
 
 ---
@@ -36,6 +36,7 @@ Toolbox contains provided pre-defined elements needed to create the workflow.
 ### Assignment
 
 - Assignment element is used to assign specific task or variable to **perform logical function.**
+- You can choose the task from the API field dropdown.
 
 ---
 

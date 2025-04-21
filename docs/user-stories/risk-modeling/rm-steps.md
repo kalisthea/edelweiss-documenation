@@ -1,14 +1,14 @@
 ---
-title: Forward Looking Risk Modeling Steps
+title: Risk Modeling Steps
 sidebar_position: 1
 ---
 
-# Forward Looking Risk Modeling Steps
+# Risk Modeling Steps
 > **Description**  
 Provides in-depth explanation of each steps from data preprocessing to forward looking in Risk Modeling.
 ---
 
-# Data Preprocessing
+## Data Preprocessing
 > **Purpose**  
 This step processes historical Observed Default Rate (ODR) and Macroeconomic Variables (MEV) to be used for model training and forecasting.
 
@@ -20,7 +20,7 @@ Data is sourced from internal banking records and external macroeconomic indicat
 
 ---
 
-## Data Cleansing
+### Data Cleansing
 > **Purpose**  
 Data cleansing is done to improve dataset to enhance model performance.
 
@@ -30,12 +30,12 @@ Data cleansing is done to improve dataset to enhance model performance.
 
 ---
 
-## Data Transformation
+### Data Transformation
 > **Purpose**  
 Data transformation is done to solve linearity and stationarity problem and expanding features to add more combinations leading to a more accurate models.
 
 
-### Transformations Types
+#### Transformations Types
 
 - **Lags of Variable (Lag)**
 
@@ -77,13 +77,13 @@ $$
 
 ---
 
-# Variable Selection
+## Variable Selection
 > **Purpose**  
  Variable selection is done to further analyze and choose the most relevant features/variables in building a predictive model
 
 ---
 
-## Stationarity Test 
+### Stationarity Test 
 > **Overview**  
 Stationarity test is done to determine whether a time series data has statistical properties that remain constant over time. It will check if the data behaves consistently without any trends or seasonality.
 
@@ -93,19 +93,19 @@ Stationarity test is done to determine whether a time series data has statistica
 
 ---
 
-### Purpose of Stationarity Test
+#### Purpose of Stationarity Test
 - To prevent spurious regression.
 - Regression from an unstationary variable can cause high r-squared value even though correlation between dependent and independent value is insignificant.
 
-### Conditions of Stationarity Test
+#### Conditions of Stationarity Test
 - Stationarity tests are conducted on both dependent and independent variables. When a dependent variable is non-stationary, we apply the differencing method. If the differenced variable still fails the stationarity test, the Bank may proceed with modeling using this differenced variable. This approach is valid because differencing typically produces variables that are more stationary than their original form.
 - Banks may choose not to test the dependent variable's stationarity statistically if they determine that the variable is clearly non-stationary based on its trend (showing consistent rises, falls, or high volatility) or is unrelated to macroeconomic factors. This assessment should be based on the reasonable analysis of the variable's historical trend. Banks must maintain proper documentation, memos, or explanations to support their decision to skip the stationarity test.
 - In the event that the Bank assesses that the dependent variable is not stationary (as in point 2 above) or not reasonable to model, Banks can choose to use historical figures without forward-looking adjustments (for PD or LGD).
 
 ---
 
-## Selection Method
-### Single Factor Analysis (SFA)
+### Selection Method
+#### Single Factor Analysis (SFA)
 📌 **Eliminating MEV based on three conditions:**
 - Correlation
     - Variable correlation lower than 0.5 will be eliminated.
@@ -114,7 +114,7 @@ Stationarity test is done to determine whether a time series data has statistica
 - Stationarity
     - Eliminate variables that did not pass the Augmented Dickey-Fuller Test.
 
-### Grouping/Clustering
+#### Grouping/Clustering
 📌 **Grouping:**
 - Grouping MEV variables that passed SFA based on (n) MEV groups.
 - Choosing variables with the best correlation from SFA output from each MEV groups.
@@ -134,7 +134,7 @@ Stationarity test is done to determine whether a time series data has statistica
 
 ---
 
-### MEV Elimination
+#### MEV Elimination
 📌 **Eliminating combined MEV based on three criteria:**
 
 - Multicollinearity
@@ -146,13 +146,13 @@ Stationarity test is done to determine whether a time series data has statistica
 
 ---
 
-# Model Training
+## Model Training
 > **Purpose**  
 This step trains model in order to gain evaluation whether the model is accurate in prediction.
 
 ---
 
-## In-sample and Out-sample
+### In-sample and Out-sample
 
 - Models are trained with **in-sample data**
 - **Out-sample data** is used to measure whether model performace based on historical data is consistent with the performance to data outside the historical data
@@ -162,10 +162,10 @@ This step trains model in order to gain evaluation whether the model is accurate
 
 ---
 
-# Model Selection and Validation (Regression)
+## Model Selection and Validation (Regression)
 
-## Model Filtering
+### Model Filtering
 
-## Rank Model
+### Rank Model
 
-## Model Choosing
+### Model Choosing

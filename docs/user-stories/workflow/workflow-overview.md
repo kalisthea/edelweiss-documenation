@@ -21,7 +21,7 @@ Increase productivity by creating and customizing workflow to your own business 
 
 - The workflow allows you to do stuff related to data collection, logical function and also various interaction within the workflow.
 
- [Details on workflow components](/docs/user-stories/workflow/workflow-elements.md)
+    [Details on workflow components](/docs/user-stories/workflow/workflow-elements.md)
 
 ---
 
@@ -37,4 +37,8 @@ Increase productivity by creating and customizing workflow to your own business 
 - To create a new workflow, click on "Create" button.
 
 - A new created worklow should appear on the grid view and click on it to open the workflow.
+
+![image](/img/wf-14.png)
+
+---
 

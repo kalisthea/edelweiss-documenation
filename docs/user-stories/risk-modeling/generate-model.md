@@ -142,6 +142,8 @@ You can run several workflows at once by selecting the workflows in the Generate
     **Type of Data**: MEV  
 :::
 
+[More detail on data cleansing](/docs/user-stories/risk-modeling/rm-steps#data-cleansing)
+
 ---
 
 ### Data Transformation
@@ -158,6 +160,8 @@ You can run several workflows at once by selecting the workflows in the Generate
     Transformation for each variables are based on the **MEV Master Configuration** but you can still update the transformations for each variables.
 :::
 
+[More detail on data transformation](/docs/user-stories/risk-modeling/rm-steps#data-transformation)
+
 ---
 
 ### Stationarity Test
@@ -171,6 +175,8 @@ You can run several workflows at once by selecting the workflows in the Generate
 - Choose "StationarityDataTest" for the **API Name** input.
 - Input transformed MEV or ODR data for **source_of_variable** input.
 - Input **max_p_value** and **method** based on the desired testing criteria.
+
+[More detail on stationarity test](/docs/user-stories/risk-modeling/rm-steps#stationarity-test)
 
 ---
 

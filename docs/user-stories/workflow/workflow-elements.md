@@ -37,6 +37,8 @@ Toolbox contains provided pre-defined elements needed to create the workflow.
 
 ### Get Record
 
+![image](/img/wf-16.png)
+
 - Get Record element is **used to retrieve records** from the database, including setting up filters for specific criterias.
 
 - Use this element when you want to pull data/records from the system that are related to the process.
@@ -46,12 +48,16 @@ Toolbox contains provided pre-defined elements needed to create the workflow.
 
 ### Assignment
 
+![image](/img/wf-17.png)
+
 - Assignment element is used to assign specific task or variable to **perform logical function.**
 - You can choose the task from the API field dropdown. (nanti ada satu section menjelaskan setiap API dan ke link ke sini)
 
 ---
 
 ### Decision
+
+![image](/img/wf-18.png)
 
 - Decision element is used to create multiple paths which **allows a single flow to have different output** results based on the decision criteria.
 
@@ -60,6 +66,8 @@ Toolbox contains provided pre-defined elements needed to create the workflow.
 ---
 
 ### Parallel
+
+![image](/img/wf-19.png)
 
 - The parallel element enables the **creation of branching logic that runs multiple processes simultaneously without predefined conditions**, allowing for dynamic, adaptable workflows that can start independently and scale up to five levels of nested decision logic.
 

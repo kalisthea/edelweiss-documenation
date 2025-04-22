@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-user-stories/workflow/workflow-api" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Assignment Element API | My Site</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://kalisthea.github.io/edelweiss-documenation/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://kalisthea.github.io/edelweiss-documenation/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://kalisthea.github.io/edelweiss-documenation/docs/user-stories/workflow/workflow-api"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Assignment Element API | My Site"><meta data-rh="true" name="description" content="Description"><meta data-rh="true" property="og:description" content="Description"><link data-rh="true" rel="canonical" href="https://kalisthea.github.io/edelweiss-documenation/docs/user-stories/workflow/workflow-api"><link data-rh="true" rel="alternate" href="https://kalisthea.github.io/edelweiss-documenation/docs/user-stories/workflow/workflow-api" hreflang="en"><link data-rh="true" rel="alternate" href="https://kalisthea.github.io/edelweiss-documenation/docs/user-stories/workflow/workflow-api" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/edelweiss-documenation/blog/rss.xml" title="My Site RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/edelweiss-documenation/blog/atom.xml" title="My Site Atom Feed">
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/edelweiss-documenation/assets/css/styles.93aa4129.css">
+<script src="/edelweiss-documenation/assets/js/runtime~main.89eb8105.js" defer="defer"></script>
+<script src="/edelweiss-documenation/assets/js/main.af8342c6.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/edelweiss-documenation/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/edelweiss-documenation/"><div class="navbar__logo"><img src="/edelweiss-documenation/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/edelweiss-documenation/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Risk Modeling Documentation</b></a><a class="navbar__item navbar__link" href="/edelweiss-documenation/docs/data-explanation">Data Explanation</a><a class="navbar__item navbar__link" href="/edelweiss-documenation/docs/code-breakdown/by-file/db-connect">Code Breakdown</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/edelweiss-documenation/docs/user-stories/regla-chatbot/regla-chatbot-overview">REGLA 2.0</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/edelweiss-documenation/docs/user-stories/regla-chatbot/regla-chatbot-overview">Regla 2.0 : Chatbot</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/edelweiss-documenation/docs/user-stories/workflow/workflow-overview">Workflow</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/edelweiss-documenation/docs/user-stories/workflow/workflow-overview">Overview of Workflow</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/edelweiss-documenation/docs/user-stories/workflow/workflow-elements">Workflow Elements</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/edelweiss-documenation/docs/user-stories/workflow/workflow-action">Workflow Actions</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/edelweiss-documenation/docs/user-stories/workflow/workflow-template">Workflow Template</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/edelweiss-documenation/docs/user-stories/workflow/workflow-schedule">Scheduling Workflow</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/edelweiss-documenation/docs/user-stories/workflow/activity-history">Activity History</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/edelweiss-documenation/docs/user-stories/workflow/resource-variable">Resource Variable</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/edelweiss-documenation/docs/user-stories/workflow/workflow-api">Assignment Element API</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/edelweiss-documenation/docs/user-stories/risk-modeling/rm-overview">Risk Modeling</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/edelweiss-documenation/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Workflow</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Assignment Element API</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Assignment Element API : Explanation</h1></header>
+<blockquote>
+<p><strong>Description</strong><br>
+<!-- -->Here you can find the explanation of each API available in the &quot;Assignment&quot; element.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="assignment-element-overview">Assignment Element Overview<a href="#assignment-element-overview" class="hash-link" aria-label="Direct link to Assignment Element Overview" title="Direct link to Assignment Element Overview">​</a></h2>
+<p>The <strong>Assignment element</strong> in REGLA 2.0’s workflow module allows users to execute logical functions essential for impairment calculation and regulatory reporting. Each task within the Assignment element represents a discrete process step in the end-to-end Expected Credit Loss (ECL) lifecycle or related data transformation. These steps can be chained together to build complex, automated compliance workflows.</p>
+<p>Below is a detailed explanation of each task under the Assignment element:</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="populate-impairment-simulation-data">Populate Impairment Simulation Data<a href="#populate-impairment-simulation-data" class="hash-link" aria-label="Direct link to Populate Impairment Simulation Data" title="Direct link to Populate Impairment Simulation Data">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Prepares the data required to simulate impairment outcomes under different scenarios. This allows institutions to model expected losses under various economic conditions or regulatory assumptions.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generate-individual-journal-data">Generate Individual Journal Data<a href="#generate-individual-journal-data" class="hash-link" aria-label="Direct link to Generate Individual Journal Data" title="Direct link to Generate Individual Journal Data">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Creates journal entries based on the most recent and accurate data as of a given reporting date. This ensures that the financial records and adjustments for impairment reflect the latest validated figures.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="populate-ima-previous--current">Populate IMA Previous &amp; Current<a href="#populate-ima-previous--current" class="hash-link" aria-label="Direct link to Populate IMA Previous &amp; Current" title="Direct link to Populate IMA Previous &amp; Current">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Populates historical and current month impairment data into the Impairment Master Account (IMA). This enables comparative analysis and transition tracking between reporting periods.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="update-average-eir-information">Update Average EIR Information<a href="#update-average-eir-information" class="hash-link" aria-label="Direct link to Update Average EIR Information" title="Direct link to Update Average EIR Information">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Calculates and updates the average Effective Interest Rate (EIR) for financial instruments. This is critical for amortized cost calculations and accurate ECL estimates.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="populate-default-account-data">Populate Default Account Data<a href="#populate-default-account-data" class="hash-link" aria-label="Direct link to Populate Default Account Data" title="Direct link to Populate Default Account Data">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Fills in account-level details that have entered default status, serving as foundational data for calculating default-related metrics and projections.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generate-default-rate">Generate Default Rate<a href="#generate-default-rate" class="hash-link" aria-label="Direct link to Generate Default Rate" title="Direct link to Generate Default Rate">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Computes the historical or forecasted default rate using the input data, which is a core parameter in calculating the Probability of Default (PD).</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="populate-pd-scenario-data">Populate PD Scenario Data<a href="#populate-pd-scenario-data" class="hash-link" aria-label="Direct link to Populate PD Scenario Data" title="Direct link to Populate PD Scenario Data">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Loads PD (Probability of Default) data across multiple macroeconomic scenarios. This supports forward-looking impairment models and stress testing.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="calculate-default-rate">Calculate Default Rate<a href="#calculate-default-rate" class="hash-link" aria-label="Direct link to Calculate Default Rate" title="Direct link to Calculate Default Rate">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Executes the calculation logic for deriving the actual default rate from historical performance and account behavior data.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generate-pd-cohort-summary">Generate PD Cohort Summary<a href="#generate-pd-cohort-summary" class="hash-link" aria-label="Direct link to Generate PD Cohort Summary" title="Direct link to Generate PD Cohort Summary">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Aggregates PD results by cohort group (e.g., by origination year or credit segment).</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generate-pd-cohort-result">Generate PD Cohort Result<a href="#generate-pd-cohort-result" class="hash-link" aria-label="Direct link to Generate PD Cohort Result" title="Direct link to Generate PD Cohort Result">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Produces the final cohort-based PD values used in ECL calculation.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generate-pd-migration-analysis">Generate PD Migration Analysis<a href="#generate-pd-migration-analysis" class="hash-link" aria-label="Direct link to Generate PD Migration Analysis" title="Direct link to Generate PD Migration Analysis">​</a></h2>
+<blockquote>
+<p><strong>Function</strong></p>
+</blockquote>
+<p>Analyzes the movement of accounts across risk ratings or stages over time.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generate-pd-migration-analysis-enr">Generate PD Migration Analysis ENR<a href="#generate-pd-migration-analysis-enr" class="hash-link" aria-label="Direct link to Generate PD Migration Analysis ENR" title="Direct link to Generate PD Migration Analysis ENR">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Evaluates exposure-weighted transitions.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generate-pd-migration-analysis-average">Generate PD Migration Analysis Average<a href="#generate-pd-migration-analysis-average" class="hash-link" aria-label="Direct link to Generate PD Migration Analysis Average" title="Direct link to Generate PD Migration Analysis Average">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Computes average migration trends.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generate-pd-migration-analysis-matrix-multiplication">Generate PD Migration Analysis Matrix Multiplication<a href="#generate-pd-migration-analysis-matrix-multiplication" class="hash-link" aria-label="Direct link to Generate PD Migration Analysis Matrix Multiplication" title="Direct link to Generate PD Migration Analysis Matrix Multiplication">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Builds transition matrices for PD calculation.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generate-pd-migration-analysis-result">Generate PD Migration Analysis Result<a href="#generate-pd-migration-analysis-result" class="hash-link" aria-label="Direct link to Generate PD Migration Analysis Result" title="Direct link to Generate PD Migration Analysis Result">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Outputs the final migration-based PD estimate.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generate-pd-term-structure-yearly">Generate PD Term Structure Yearly<a href="#generate-pd-term-structure-yearly" class="hash-link" aria-label="Direct link to Generate PD Term Structure Yearly" title="Direct link to Generate PD Term Structure Yearly">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Projects PD over multiple years, reflecting lifetime expectations.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generate-pd-term-structure-monthly-from-yearly">Generate PD Term Structure Monthly from Yearly<a href="#generate-pd-term-structure-monthly-from-yearly" class="hash-link" aria-label="Direct link to Generate PD Term Structure Monthly from Yearly" title="Direct link to Generate PD Term Structure Monthly from Yearly">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Converts yearly PDs to monthly values for finer granularity in short-term reporting.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generate-pd-forward-looking-yearly">Generate PD Forward Looking Yearly<a href="#generate-pd-forward-looking-yearly" class="hash-link" aria-label="Direct link to Generate PD Forward Looking Yearly" title="Direct link to Generate PD Forward Looking Yearly">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Annual projections using forward-looking inputs.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generate-pd-forward-looking-monthly-from-yearly">Generate PD Forward Looking Monthly from Yearly<a href="#generate-pd-forward-looking-monthly-from-yearly" class="hash-link" aria-label="Direct link to Generate PD Forward Looking Monthly from Yearly" title="Direct link to Generate PD Forward Looking Monthly from Yearly">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Monthly disaggregation of forward-looking yearly data.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="update-wo-recovery-portfolio">Update WO Recovery Portfolio<a href="#update-wo-recovery-portfolio" class="hash-link" aria-label="Direct link to Update WO Recovery Portfolio" title="Direct link to Update WO Recovery Portfolio">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Updates data related to written-off accounts and their recovery status. Supports LGD (Loss Given Default) and post-write-off analysis.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="populate-recovery-scenario-data">Populate Recovery Scenario Data<a href="#populate-recovery-scenario-data" class="hash-link" aria-label="Direct link to Populate Recovery Scenario Data" title="Direct link to Populate Recovery Scenario Data">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Loads scenario-based assumptions for expected collections post-default.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="populate-wo-scenario-data">Populate WO Scenario Data<a href="#populate-wo-scenario-data" class="hash-link" aria-label="Direct link to Populate WO Scenario Data" title="Direct link to Populate WO Scenario Data">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Loads scenario-based assumptions for scenarios where the asset is deemed uncollectible.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="populate-lgd-scenario-data">Populate LGD Scenario Data<a href="#populate-lgd-scenario-data" class="hash-link" aria-label="Direct link to Populate LGD Scenario Data" title="Direct link to Populate LGD Scenario Data">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Loads scenario-based assumptions for calculating potential losses under various circumstances.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="calculate-lgd-cure-lgl-detail">Calculate LGD Cure LGL Detail<a href="#calculate-lgd-cure-lgl-detail" class="hash-link" aria-label="Direct link to Calculate LGD Cure LGL Detail" title="Direct link to Calculate LGD Cure LGL Detail">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Processes account-level recovery details.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="calculate-lgd-cure-lgl-header">Calculate LGD Cure LGL Header<a href="#calculate-lgd-cure-lgl-header" class="hash-link" aria-label="Direct link to Calculate LGD Cure LGL Header" title="Direct link to Calculate LGD Cure LGL Header">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Aggregates cure data at a higher level for reporting and audit trails.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="populate-ccf-scenario-data">Populate CCF Scenario Data<a href="#populate-ccf-scenario-data" class="hash-link" aria-label="Direct link to Populate CCF Scenario Data" title="Direct link to Populate CCF Scenario Data">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Loads scenario data for Credit Conversion Factor (CCF), which estimates the likelihood that off-balance exposures (like credit lines) will become actual exposures.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="calculate-ccf-detail">Calculate CCF Detail<a href="#calculate-ccf-detail" class="hash-link" aria-label="Direct link to Calculate CCF Detail" title="Direct link to Calculate CCF Detail">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Calculates account-level CCF outputs.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="calculate-ccf-header">Calculate CCF Header<a href="#calculate-ccf-header" class="hash-link" aria-label="Direct link to Calculate CCF Header" title="Direct link to Calculate CCF Header">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Summarizes these calculations for portfolio-level insights.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="populate-ecl-master-account">Populate ECL Master Account<a href="#populate-ecl-master-account" class="hash-link" aria-label="Direct link to Populate ECL Master Account" title="Direct link to Populate ECL Master Account">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Centralizes all necessary data for ECL calculation, including PD, LGD, EAD, and macroeconomic overlays, into a single structure for processing.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generate-ecl-default-rule">Generate ECL Default Rule<a href="#generate-ecl-default-rule" class="hash-link" aria-label="Direct link to Generate ECL Default Rule" title="Direct link to Generate ECL Default Rule">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Creates baseline assumptions for default conditions used in ECL workflows, aligning with internal policy or regulatory guidance.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="update-stage-and-sicr-criteria">Update Stage and SICR Criteria<a href="#update-stage-and-sicr-criteria" class="hash-link" aria-label="Direct link to Update Stage and SICR Criteria" title="Direct link to Update Stage and SICR Criteria">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Applies updates to criteria for staging financial assets (Stage 1, 2, or 3) and determining Significant Increase in Credit Risk (SICR). This ensures that staging reflects evolving credit quality.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generate-ead-term-structure-for-non-revolving-product">Generate EAD Term Structure for Non-Revolving Product<a href="#generate-ead-term-structure-for-non-revolving-product" class="hash-link" aria-label="Direct link to Generate EAD Term Structure for Non-Revolving Product" title="Direct link to Generate EAD Term Structure for Non-Revolving Product">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Calculates Exposure at Default (EAD) over time for term loans or fixed facilities.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generate-ead-term-structure-for-revolving-product">Generate EAD Term Structure for Revolving Product<a href="#generate-ead-term-structure-for-revolving-product" class="hash-link" aria-label="Direct link to Generate EAD Term Structure for Revolving Product" title="Direct link to Generate EAD Term Structure for Revolving Product">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Calculates Exposure at Default (EAD) over time for credit cards or lines of credit.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="update-impairment-result-to-ima-monthly">Update Impairment Result to IMA Monthly<a href="#update-impairment-result-to-ima-monthly" class="hash-link" aria-label="Direct link to Update Impairment Result to IMA Monthly" title="Direct link to Update Impairment Result to IMA Monthly">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Saves the final calculated impairment results to the monthly IMA repository, enabling auditability and future comparisons.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="calculate-ecl">Calculate ECL<a href="#calculate-ecl" class="hash-link" aria-label="Direct link to Calculate ECL" title="Direct link to Calculate ECL">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Executes the complete Expected Credit Loss calculation based on PD, LGD, EAD, discounting, and scenario weighting. Outputs are used in financial provisioning.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="stop-process-workflow">Stop Process Workflow<a href="#stop-process-workflow" class="hash-link" aria-label="Direct link to Stop Process Workflow" title="Direct link to Stop Process Workflow">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Halts the workflow at a specific point. This may be used for debugging, review stages, or compliance checkpoint validation.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="initial-update">Initial Update<a href="#initial-update" class="hash-link" aria-label="Direct link to Initial Update" title="Direct link to Initial Update">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Ingests and updates key client data such as overdue information, internal credit grades, and external credit ratings—crucial for risk assessments and staging.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="decision-process---populate-ima-previous--current">Decision Process - Populate IMA Previous &amp; Current<a href="#decision-process---populate-ima-previous--current" class="hash-link" aria-label="Direct link to Decision Process - Populate IMA Previous &amp; Current" title="Direct link to Decision Process - Populate IMA Previous &amp; Current">​</a></h2>
+<blockquote>
+<p><strong>Function</strong><br>
+<!-- -->Implements logic to determine whether to populate previous and current IMA data based on defined criteria, supporting decision-based branching in workflows.</p>
+</blockquote>
+<hr></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/edelweiss-documenation/docs/user-stories/workflow/resource-variable"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Resource Variable</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/edelweiss-documenation/docs/user-stories/risk-modeling/rm-overview"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Overview of Risk Modeling Feature</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#assignment-element-overview" class="table-of-contents__link toc-highlight">Assignment Element Overview</a></li><li><a href="#populate-impairment-simulation-data" class="table-of-contents__link toc-highlight">Populate Impairment Simulation Data</a></li><li><a href="#generate-individual-journal-data" class="table-of-contents__link toc-highlight">Generate Individual Journal Data</a></li><li><a href="#populate-ima-previous--current" class="table-of-contents__link toc-highlight">Populate IMA Previous &amp; Current</a></li><li><a href="#update-average-eir-information" class="table-of-contents__link toc-highlight">Update Average EIR Information</a></li><li><a href="#populate-default-account-data" class="table-of-contents__link toc-highlight">Populate Default Account Data</a></li><li><a href="#generate-default-rate" class="table-of-contents__link toc-highlight">Generate Default Rate</a></li><li><a href="#populate-pd-scenario-data" class="table-of-contents__link toc-highlight">Populate PD Scenario Data</a></li><li><a href="#calculate-default-rate" class="table-of-contents__link toc-highlight">Calculate Default Rate</a></li><li><a href="#generate-pd-cohort-summary" class="table-of-contents__link toc-highlight">Generate PD Cohort Summary</a></li><li><a href="#generate-pd-cohort-result" class="table-of-contents__link toc-highlight">Generate PD Cohort Result</a></li><li><a href="#generate-pd-migration-analysis" class="table-of-contents__link toc-highlight">Generate PD Migration Analysis</a></li><li><a href="#generate-pd-migration-analysis-enr" class="table-of-contents__link toc-highlight">Generate PD Migration Analysis ENR</a></li><li><a href="#generate-pd-migration-analysis-average" class="table-of-contents__link toc-highlight">Generate PD Migration Analysis Average</a></li><li><a href="#generate-pd-migration-analysis-matrix-multiplication" class="table-of-contents__link toc-highlight">Generate PD Migration Analysis Matrix Multiplication</a></li><li><a href="#generate-pd-migration-analysis-result" class="table-of-contents__link toc-highlight">Generate PD Migration Analysis Result</a></li><li><a href="#generate-pd-term-structure-yearly" class="table-of-contents__link toc-highlight">Generate PD Term Structure Yearly</a></li><li><a href="#generate-pd-term-structure-monthly-from-yearly" class="table-of-contents__link toc-highlight">Generate PD Term Structure Monthly from Yearly</a></li><li><a href="#generate-pd-forward-looking-yearly" class="table-of-contents__link toc-highlight">Generate PD Forward Looking Yearly</a></li><li><a href="#generate-pd-forward-looking-monthly-from-yearly" class="table-of-contents__link toc-highlight">Generate PD Forward Looking Monthly from Yearly</a></li><li><a href="#update-wo-recovery-portfolio" class="table-of-contents__link toc-highlight">Update WO Recovery Portfolio</a></li><li><a href="#populate-recovery-scenario-data" class="table-of-contents__link toc-highlight">Populate Recovery Scenario Data</a></li><li><a href="#populate-wo-scenario-data" class="table-of-contents__link toc-highlight">Populate WO Scenario Data</a></li><li><a href="#populate-lgd-scenario-data" class="table-of-contents__link toc-highlight">Populate LGD Scenario Data</a></li><li><a href="#calculate-lgd-cure-lgl-detail" class="table-of-contents__link toc-highlight">Calculate LGD Cure LGL Detail</a></li><li><a href="#calculate-lgd-cure-lgl-header" class="table-of-contents__link toc-highlight">Calculate LGD Cure LGL Header</a></li><li><a href="#populate-ccf-scenario-data" class="table-of-contents__link toc-highlight">Populate CCF Scenario Data</a></li><li><a href="#calculate-ccf-detail" class="table-of-contents__link toc-highlight">Calculate CCF Detail</a></li><li><a href="#calculate-ccf-header" class="table-of-contents__link toc-highlight">Calculate CCF Header</a></li><li><a href="#populate-ecl-master-account" class="table-of-contents__link toc-highlight">Populate ECL Master Account</a></li><li><a href="#generate-ecl-default-rule" class="table-of-contents__link toc-highlight">Generate ECL Default Rule</a></li><li><a href="#update-stage-and-sicr-criteria" class="table-of-contents__link toc-highlight">Update Stage and SICR Criteria</a></li><li><a href="#generate-ead-term-structure-for-non-revolving-product" class="table-of-contents__link toc-highlight">Generate EAD Term Structure for Non-Revolving Product</a></li><li><a href="#generate-ead-term-structure-for-revolving-product" class="table-of-contents__link toc-highlight">Generate EAD Term Structure for Revolving Product</a></li><li><a href="#update-impairment-result-to-ima-monthly" class="table-of-contents__link toc-highlight">Update Impairment Result to IMA Monthly</a></li><li><a href="#calculate-ecl" class="table-of-contents__link toc-highlight">Calculate ECL</a></li><li><a href="#stop-process-workflow" class="table-of-contents__link toc-highlight">Stop Process Workflow</a></li><li><a href="#initial-update" class="table-of-contents__link toc-highlight">Initial Update</a></li><li><a href="#decision-process---populate-ima-previous--current" class="table-of-contents__link toc-highlight">Decision Process - Populate IMA Previous &amp; Current</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"></div></footer></div>
+</body>
+</html>

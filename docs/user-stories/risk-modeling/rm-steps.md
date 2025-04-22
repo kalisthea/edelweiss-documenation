@@ -165,7 +165,32 @@ This step trains model in order to gain evaluation whether the model is accurate
 ## Model Selection and Validation (Regression)
 
 ### Model Filtering
+- Choose models with adjusted r-squared > 0.5
+- Choose models that passed the three statistic test:
+    - Normality
+    - Heteroscedasticity
+    - Autocorrelation
+
+---
 
 ### Rank Model
 
+- Models that passed the filtering phase will be ranked based on two criteria:
+    - Mean Absolute Percentage Error (MAPE)
+    - Mean Squared Error (MSE)
+
+---
+
 ### Model Choosing
+
+- Criterias in choosing top models are,
+    - **In-sample test**
+        - Observing r-squared value between actual ODR and fit ODR.
+        - Higher r-squared value is better.
+        - If the value is above 90%, the solution is to
+            - Choose a different type of transformation from the same group of MEV combination with lower r-squared percentage.
+            - Replace both dependent and independent data for the model.
+    - **Out-sample test**
+        - Observing if fit out-sample value is higher or lower than actual out-sample value.
+
+---

@@ -121,6 +121,8 @@ You can run several workflows at once by selecting the workflows in the Generate
 - Use the "Dataset" element from the toolbox and click on the process to show configuration settings.
 - Input the insample and outsample period. You can add and skip periods between data.
 
+[More detail on setting Dataset](/docs/user-stories/risk-modeling/rm-steps#model-training)
+
 ---
 
 ### Data Cleansing
@@ -203,6 +205,9 @@ You can run several workflows at once by selecting the workflows in the Generate
 - Use the "Expected Trend Test" element from the toolbox and click on the process to show configuration settings.
 - Set the expected trend for each MEV Variables.
 
+[More detail on expected trend test](/docs/user-stories/risk-modeling/rm-steps#selection-method)
+
+
 ---
 
 ### MEV Combination
@@ -218,6 +223,8 @@ You can run several workflows at once by selecting the workflows in the Generate
 :::caution Restrictions
 - You can only input **2 (minimum) and 5 (maximum)** of group combination number.
 :::
+
+[More detail on MEV Combination](/docs/user-stories/risk-modeling/rm-steps#groupingclustering)
 
 
 ---
@@ -238,5 +245,8 @@ You can run several workflows at once by selecting the workflows in the Generate
     - **Pass Threshold** : the number of method that has to pass the test in order to gain "Passed" status.
     - By checking the **Mandatory** checkbox, it will not show the result of selected method in the model manager if it doesn't pass the test.
 :::
+
+[More detail on Regression](/docs/user-stories/risk-modeling/rm-steps#model-selection-and-validation-regression)
+
 ---
 

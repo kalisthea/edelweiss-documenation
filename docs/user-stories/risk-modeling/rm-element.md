@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Risk Modeling Elements
 > **Description**  
-Details of elements within the workflow
+Here you can find the explanation of every elements exists within the workflow
 
 ---
 
@@ -19,13 +19,13 @@ Details of elements within the workflow
 
 ## Types of Elements in Generate Modeling Process
 
-Here are the list of elements you can use in the [Generate Modeling Process](/docs/user-stories/risk-modeling/generate-model.md) menu.
+Here are the list of elements you can use in the workflow of [Generate Modeling Process](/docs/user-stories/risk-modeling/generate-model.md) menu.
 
 
 ### Get File
 
-- You can use "Get File" element to upload data into the workflow.  
-    Example : MEV or ODR Files.
+> **Definition**  
+"Get File" element is used to upload data into the workflow.
 
 - You can choose to upload directly from your device or from the File Manager.
 
@@ -37,7 +37,9 @@ Here are the list of elements you can use in the [Generate Modeling Process](/do
 
 ### Assignment
 
-- "Assignment" element is used to run logical function such as **Data Cleansing, Stationarity Test, and MEV Combination Process.**
+> **Definition**  
+"Assignment" element is used to run logical function such as **Data Cleansing, Stationarity Test, and MEV Combination Process.** 
+
 
 - You can choose which tasks you want to run by choosing one of the options available on the API field. Here are the information of which API you should choose.
 
@@ -55,7 +57,8 @@ MEV Combination : MEVCombination
 
 ### Dataset
 
-- "Dataset" element is used to set up insample and outsample range that will be used to train the model within the process.
+> **Definition**  
+"Dataset" element is used to set up insample and outsample range that will be used to train the model within the process.
 
 - Setting up the insample range is mandatory while you can choose not to set the outsample range.
 
@@ -63,7 +66,8 @@ MEV Combination : MEVCombination
 
 ### Transform Data
 
-- "Transform Data" is used to transform dataset.
+> **Definition**  
+"Transform Data" is used to transform dataset.
 
 - On the object field, you input the output data from previous element to provide the data needed for the transformation process.
 
@@ -75,7 +79,8 @@ MEV Combination : MEVCombination
 
 ### Expected Trend Test
 
-- "Expected Trend Test" element is used to perform expected trend test in the modeling process.
+> **Definition**  
+"Expected Trend Test" element is used to perform expected trend test in the modeling process.
 
 - On the object field, you input the output data from previous element to provide the data needed for expected trend test process.
 
@@ -85,7 +90,8 @@ MEV Combination : MEVCombination
 
 ### Correlation Test
 
-- "Correlation Test" element is used to perform correlation test in the modeling process.
+> **Definition**  
+"Correlation Test" element is used to perform correlation test in the modeling process.
 
 - You need to input independent and dependent value needed based on the output of previous elements process.
 
@@ -98,7 +104,8 @@ MEV Combination : MEVCombination
 
 ### Regression
 
-- "Regression" element is used to perform regression test in the modeling process.
+> **Definition**   
+"Regression" element is used to perform regression test in the modeling process.
 
 - You are required to input independent, dependent value and MEV Transformation data from the previous elements that had been set up before.
 
@@ -114,11 +121,12 @@ MEV Combination : MEVCombination
 
 ## Types of Elements in Forward Looking Prediction
 
-Here are the list of elements you can use in the [Forward Looking Prediction](/docs/user-stories/risk-modeling/forward-looking.md) menu.
+Here are the list of elements you can use in the workflow of [Forward Looking Prediction](/docs/user-stories/risk-modeling/forward-looking.md) menu.
 
 ### Forecast MEV
 
-- "Forecast MEV" element is used to perform ARIMA on MEV data.
+> **Definition**   
+"Forecast MEV" element is used to perform ARIMA on MEV data.
 
 - You need to choose which running and successful source flow you want to use from the Generate Modeling Process.
 
@@ -132,7 +140,8 @@ Here are the list of elements you can use in the [Forward Looking Prediction](/d
 
 ### Transform Forecast MEV
 
-- "Transform Forecast MEV" is used to transform the previously forecasted MEV variables.
+> **Definition**   
+"Transform Forecast MEV" is used to transform the previously forecasted MEV variables.
 
 - You need to input the previously forecasted MEV element as the object and the form will automatically show the transformation for the variable based on the source flow selected.
 
@@ -142,7 +151,8 @@ Here are the list of elements you can use in the [Forward Looking Prediction](/d
 
 ### Weighting
 
-- "Weighting" element is used to perform weighting scenario.
+> **Definition**   
+"Weighting" element is used to perform weighting scenario.
 
 - The form will automatically input the previous transformation element done within the workflow.
 
@@ -152,7 +162,8 @@ Here are the list of elements you can use in the [Forward Looking Prediction](/d
 
 ### Assignment
 
-- "Assignment" element in forward looking process is used to **predict ODR value**.
+> **Definition**   
+"Assignment" element in forward looking process is used to **predict ODR value**.
 
 - You have to choose "Predicted ODR" in the API field.
 

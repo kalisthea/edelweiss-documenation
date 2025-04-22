@@ -60,6 +60,7 @@ const sidebars = {
         'user-stories/workflow/workflow-schedule',
         'user-stories/workflow/activity-history',
         'user-stories/workflow/resource-variable',
+        'user-stories/workflow/workflow-api',
       ],
     },
     {

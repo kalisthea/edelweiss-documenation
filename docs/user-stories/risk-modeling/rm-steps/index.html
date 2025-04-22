@@ -10,7 +10,7 @@
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/edelweiss-documenation/assets/css/styles.93aa4129.css">
-<script src="/edelweiss-documenation/assets/js/runtime~main.89eb8105.js" defer="defer"></script>
+<script src="/edelweiss-documenation/assets/js/runtime~main.3b4f7919.js" defer="defer"></script>
 <script src="/edelweiss-documenation/assets/js/main.af8342c6.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -203,7 +203,51 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="model-selection-and-validation-regression">Model Selection and Validation (Regression)<a href="#model-selection-and-validation-regression" class="hash-link" aria-label="Direct link to Model Selection and Validation (Regression)" title="Direct link to Model Selection and Validation (Regression)">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="model-filtering">Model Filtering<a href="#model-filtering" class="hash-link" aria-label="Direct link to Model Filtering" title="Direct link to Model Filtering">​</a></h3>
+<ul>
+<li>Choose models with adjusted r-squared &gt; 0.5</li>
+<li>Choose models that passed the three statistic test:<!-- -->
+<ul>
+<li>Normality</li>
+<li>Heteroscedasticity</li>
+<li>Autocorrelation</li>
+</ul>
+</li>
+</ul>
+<hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="rank-model">Rank Model<a href="#rank-model" class="hash-link" aria-label="Direct link to Rank Model" title="Direct link to Rank Model">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="model-choosing">Model Choosing<a href="#model-choosing" class="hash-link" aria-label="Direct link to Model Choosing" title="Direct link to Model Choosing">​</a></h3></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/edelweiss-documenation/docs/user-stories/risk-modeling/rm-overview"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Overview of Risk Modeling Feature</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/edelweiss-documenation/docs/user-stories/risk-modeling/mev-config"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MEV Master Configuration</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#data-preprocessing" class="table-of-contents__link toc-highlight">Data Preprocessing</a><ul><li><a href="#data-cleansing" class="table-of-contents__link toc-highlight">Data Cleansing</a></li><li><a href="#data-transformation" class="table-of-contents__link toc-highlight">Data Transformation</a></li></ul></li><li><a href="#variable-selection" class="table-of-contents__link toc-highlight">Variable Selection</a><ul><li><a href="#stationarity-test" class="table-of-contents__link toc-highlight">Stationarity Test</a></li><li><a href="#selection-method" class="table-of-contents__link toc-highlight">Selection Method</a></li></ul></li><li><a href="#model-training" class="table-of-contents__link toc-highlight">Model Training</a><ul><li><a href="#in-sample-and-out-sample" class="table-of-contents__link toc-highlight">In-sample and Out-sample</a></li></ul></li><li><a href="#model-selection-and-validation-regression" class="table-of-contents__link toc-highlight">Model Selection and Validation (Regression)</a><ul><li><a href="#model-filtering" class="table-of-contents__link toc-highlight">Model Filtering</a></li><li><a href="#rank-model" class="table-of-contents__link toc-highlight">Rank Model</a></li><li><a href="#model-choosing" class="table-of-contents__link toc-highlight">Model Choosing</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"></div></footer></div>
+<ul>
+<li>Models that passed the filtering phase will be ranked based on two criteria:<!-- -->
+<ul>
+<li>Mean Absolute Percentage Error (MAPE)</li>
+<li>Mean Squared Error (MSE)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="model-choosing">Model Choosing<a href="#model-choosing" class="hash-link" aria-label="Direct link to Model Choosing" title="Direct link to Model Choosing">​</a></h3>
+<ul>
+<li>Criterias in choosing top models are,<!-- -->
+<ul>
+<li><strong>In-sample test</strong>
+<ul>
+<li>Observing r-squared value between actual ODR and fit ODR.</li>
+<li>Higher r-squared value is better.</li>
+<li>If the value is above 90%, the solution is to<!-- -->
+<ul>
+<li>Choose a different type of transformation from the same group of MEV combination with lower r-squared percentage.</li>
+<li>Replace both dependent and independent data for the model.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Out-sample test</strong>
+<ul>
+<li>Observing if fit out-sample value is higher or lower than actual out-sample value.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/edelweiss-documenation/docs/user-stories/risk-modeling/rm-overview"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Overview of Risk Modeling Feature</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/edelweiss-documenation/docs/user-stories/risk-modeling/mev-config"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MEV Master Configuration</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#data-preprocessing" class="table-of-contents__link toc-highlight">Data Preprocessing</a><ul><li><a href="#data-cleansing" class="table-of-contents__link toc-highlight">Data Cleansing</a></li><li><a href="#data-transformation" class="table-of-contents__link toc-highlight">Data Transformation</a></li></ul></li><li><a href="#variable-selection" class="table-of-contents__link toc-highlight">Variable Selection</a><ul><li><a href="#stationarity-test" class="table-of-contents__link toc-highlight">Stationarity Test</a></li><li><a href="#selection-method" class="table-of-contents__link toc-highlight">Selection Method</a></li></ul></li><li><a href="#model-training" class="table-of-contents__link toc-highlight">Model Training</a><ul><li><a href="#in-sample-and-out-sample" class="table-of-contents__link toc-highlight">In-sample and Out-sample</a></li></ul></li><li><a href="#model-selection-and-validation-regression" class="table-of-contents__link toc-highlight">Model Selection and Validation (Regression)</a><ul><li><a href="#model-filtering" class="table-of-contents__link toc-highlight">Model Filtering</a></li><li><a href="#rank-model" class="table-of-contents__link toc-highlight">Rank Model</a></li><li><a href="#model-choosing" class="table-of-contents__link toc-highlight">Model Choosing</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"></div></footer></div>
 </body>
 </html>

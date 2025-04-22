@@ -10,7 +10,7 @@
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/edelweiss-documenation/assets/css/styles.93aa4129.css">
-<script src="/edelweiss-documenation/assets/js/runtime~main.89eb8105.js" defer="defer"></script>
+<script src="/edelweiss-documenation/assets/js/runtime~main.3b4f7919.js" defer="defer"></script>
 <script src="/edelweiss-documenation/assets/js/main.af8342c6.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -115,6 +115,7 @@
 <li>Use the &quot;Dataset&quot; element from the toolbox and click on the process to show configuration settings.</li>
 <li>Input the insample and outsample period. You can add and skip periods between data.</li>
 </ul>
+<p><a href="/edelweiss-documenation/docs/user-stories/risk-modeling/rm-steps#model-training">More detail on setting Dataset</a></p>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="data-cleansing">Data Cleansing<a href="#data-cleansing" class="hash-link" aria-label="Direct link to Data Cleansing" title="Direct link to Data Cleansing">​</a></h3>
 <table><thead><tr><th>Process</th><th>Element</th><th>Prerequisite Parameters</th></tr></thead><tbody><tr><td>MEV Cleansing</td><td>Assignment</td><td>Uploaded MEV Data</td></tr><tr><td>ODR Cleansing</td><td>Assignment</td><td>Uploaded ODR Data</td></tr></tbody></table>
@@ -164,6 +165,7 @@
 <li>Use the &quot;Expected Trend Test&quot; element from the toolbox and click on the process to show configuration settings.</li>
 <li>Set the expected trend for each MEV Variables.</li>
 </ul>
+<p><a href="/edelweiss-documenation/docs/user-stories/risk-modeling/rm-steps#selection-method">More detail on expected trend test</a></p>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="mev-combination">MEV Combination<a href="#mev-combination" class="hash-link" aria-label="Direct link to MEV Combination" title="Direct link to MEV Combination">​</a></h3>
 <table><thead><tr><th>Process</th><th>Element</th><th>Prerequisite Parameters</th></tr></thead><tbody><tr><td>MEV Combination</td><td>Assignment</td><td>Output from MEV Transformation</td></tr></tbody></table>
@@ -175,6 +177,7 @@
 <div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Restrictions</div><div class="admonitionContent_BuS1"><ul>
 <li>You can only input <strong>2 (minimum) and 5 (maximum)</strong> of group combination number.</li>
 </ul></div></div>
+<p><a href="/edelweiss-documenation/docs/user-stories/risk-modeling/rm-steps#groupingclustering">More detail on MEV Combination</a></p>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="regression">Regression<a href="#regression" class="hash-link" aria-label="Direct link to Regression" title="Direct link to Regression">​</a></h3>
 <table><thead><tr><th>Process</th><th>Element</th><th>Prerequisite Parameters</th></tr></thead><tbody><tr><td>Regression</td><td>Regression Test</td><td>Output from MEV Combination, MEV Transformation, Stationary ODR</td></tr></tbody></table>
@@ -189,6 +192,7 @@
 <li><strong>Pass Threshold</strong> : the number of method that has to pass the test in order to gain &quot;Passed&quot; status.</li>
 <li>By checking the <strong>Mandatory</strong> checkbox, it will not show the result of selected method in the model manager if it doesn&#x27;t pass the test.</li>
 </ul></div></div>
+<p><a href="/edelweiss-documenation/docs/user-stories/risk-modeling/rm-steps#model-selection-and-validation-regression">More detail on Regression</a></p>
 <hr></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/edelweiss-documenation/docs/user-stories/risk-modeling/mev-config"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MEV Master Configuration</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/edelweiss-documenation/docs/user-stories/risk-modeling/forward-looking"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Forward Looking Prediction</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#calculating-probability-of-default-pd-with-forward-looking" class="table-of-contents__link toc-highlight">Calculating Probability of Default (PD) with Forward-Looking</a></li><li><a href="#creating-new-workflow" class="table-of-contents__link toc-highlight">Creating New Workflow</a></li><li><a href="#exploring-the-workflow" class="table-of-contents__link toc-highlight">Exploring the Workflow</a><ul><li><a href="#toolbox" class="table-of-contents__link toc-highlight">Toolbox</a></li><li><a href="#workflow-status-control" class="table-of-contents__link toc-highlight">Workflow Status Control</a></li><li><a href="#readedit" class="table-of-contents__link toc-highlight">Read/Edit</a></li><li><a href="#versioning" class="table-of-contents__link toc-highlight">Versioning</a></li></ul></li><li><a href="#creating-workflow-process-for-pd" class="table-of-contents__link toc-highlight">Creating Workflow Process for PD</a><ul><li><a href="#uploading-historical-mev-and-odr-data" class="table-of-contents__link toc-highlight">Uploading Historical MEV and ODR Data</a></li><li><a href="#setting-insample-and-outsample" class="table-of-contents__link toc-highlight">Setting Insample and Outsample</a></li><li><a href="#data-cleansing" class="table-of-contents__link toc-highlight">Data Cleansing</a></li><li><a href="#data-transformation" class="table-of-contents__link toc-highlight">Data Transformation</a></li><li><a href="#stationarity-test" class="table-of-contents__link toc-highlight">Stationarity Test</a></li><li><a href="#correlation-test" class="table-of-contents__link toc-highlight">Correlation Test</a></li><li><a href="#expected-trend-test" class="table-of-contents__link toc-highlight">Expected Trend Test</a></li><li><a href="#mev-combination" class="table-of-contents__link toc-highlight">MEV Combination</a></li><li><a href="#regression" class="table-of-contents__link toc-highlight">Regression</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"></div></footer></div>
 </body>
 </html>
